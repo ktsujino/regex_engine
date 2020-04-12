@@ -1,4 +1,4 @@
-python based self-educational implementation of regex engine.
+Python3 based self-educational implementation of regex engine.
 
 Only very basic subset of regex is supported in a suboptimal way:
 - ascii only
@@ -31,4 +31,5 @@ This top level behavior is encapsulated in regex.py .
 See test_*.py for how to run these.
 
 [1] https://en.wikipedia.org/wiki/Thompson%27s_construction
+
 [2] https://en.wikipedia.org/wiki/Powerset_construction
