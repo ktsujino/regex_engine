@@ -8,7 +8,7 @@ Only very basic subset of regex is supported in a suboptimal way:
 - escape \
 .
 
-Firstly, lex.py first does lexical parsing of input pattern.
+lex.py first does lexical parsing of input pattern.
 Brackets [] and {} have non-recursive nature, so they are processed as part of this lex step.
 
 Next, syntax.py converts lists of lexically analyzed tokens into syntax tree.
