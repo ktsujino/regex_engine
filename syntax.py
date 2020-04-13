@@ -195,7 +195,7 @@ def analyze_term(tokens):
 def resolve_quantification(nodes):
     out = []
     for node in nodes:
-        if type(node) == QuantificationNode:
+        if type(node) == QuantificationNode and node.operand == None:
             if len(out) == 0:
                 raise Exception('found invalid quantification operator')
             node.operand = out.pop(-1)
