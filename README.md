@@ -2,10 +2,18 @@ Python3 based self-educational implementation of regex engine.
 
 Only very basic subset of regex is supported in a suboptimal way:
 - ascii only
-- char range operator: [], .
-- quantification: {}, *, +
-- union |
-- escape \
+- char range operator: [] and .
+- quantification: {}, * and +
+- union: |
+- grouping (without capture): ()
+- escape: \\
+
+.
+
+Try
+```
+$ echo foo | python3 regex.py 'fo+'
+```
 .
 
 lex.py first does lexical parsing of input pattern.

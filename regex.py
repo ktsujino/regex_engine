@@ -9,3 +9,11 @@ def compile_automaton(regex):
         nfa.epsilon_elimination()
         dfa = automata.DFA.from_nfa(nfa)
         return dfa
+
+if __name__ == '__main__':
+    import sys
+    dfa = compile_automaton(sys.argv[1])
+    for line in sys.stdin:
+        line = line.rstrip('\n')
+        if dfa.match(line):
+            print(line)
